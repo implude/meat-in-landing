@@ -9,7 +9,9 @@ export const NavBar = () => {
         <Description>MEAT IN</Description>
         <Description>Discoding</Description>
       </Hexile>
-      <img src={GitHub} />
+      <a href="https://github.com/implude/meat-in-android">
+        <img src={GitHub} />
+      </a>
     </Hexile>
   );
 };
