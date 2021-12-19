@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "josa-complete";
-import { RecoilRoot } from "recoil";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -15,9 +14,6 @@ globalCss({
   ],
   ":root": {
     fontSize: "8px",
-    "@bp1": {
-      // fontSize: "6px",
-    },
   },
   body: {
     fontSize: "3rem",
@@ -43,11 +39,9 @@ const AnimatedRouter = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <RecoilRoot>
-      <BrowserRouter>
-        <AnimatedRouter />
-      </BrowserRouter>
-    </RecoilRoot>
+    <BrowserRouter>
+      <AnimatedRouter />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
